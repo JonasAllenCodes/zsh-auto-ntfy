@@ -72,7 +72,7 @@ _ntfy_precmd() {
 autoload -Uz add-zsh-hook
 add-zsh-hook preexec _ntfy_preexec
 add-zsh-hook precmd _ntfy_precmd
-echo "ntfy-notify: Loaded (threshold: $NTFY_THRESHOLD s, topic: $NTFY_TOPIC)"
+[[ $NTFY_DEBUG == 1 ]] && echo "ntfy-notify: Loaded (threshold: $NTFY_THRESHOLD s, topic: $NTFY_TOPIC)"
 
 # Public function to toggle plugin (e.g., for temporary disable)
 ntfy-notify-toggle() {
