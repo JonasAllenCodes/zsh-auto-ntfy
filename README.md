@@ -1,6 +1,6 @@
 # zsh-auto-ntfy
 
-A Zsh plugin for sending [ntfy](https://ntfy.sh/) notifications for long-running commands. Get a notification on your phone when your long-running command finishes.
+Tired of staring at your terminal, wondering if that build, script, or compilation is ever going to finish? zsh-auto-ntfy is your Zsh sidekick: it automatically detects long-running commands (tunable to any duration you want) and pings your phone with a sleek ntfy.sh push notification the instant they're done. Grab a coffee, tackle that quick errand, or just stretch your legs—come back refreshed, knowing exactly when to dive back in, without the constant "is it ready yet?" checks.
 
 ## Requirements
 
