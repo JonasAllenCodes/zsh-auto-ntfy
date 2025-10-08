@@ -77,7 +77,7 @@ The plugin works automatically. To temporarily disable or re-enable notification
 ## TODO
 
 - [ ] Support for self-hosted ntfy instances via a `NTFY_HOST` environment variable.
-- [ ] Remove the default `NTFY_TOPIC` to enhance security and provide a clear error message if it's not set.
+- [x] ~~Remove the default `NTFY_TOPIC` to enhance security and provide a clear error message if it's not set.~~ (2025-10-08)
 - [ ] Solicit community feedback on the default `NTFY_IGNORED_COMMANDS` list.
 - [ ] Include the last line of the command's output in the notification body.
 - [ ] Implement user authorization for ntfy notifications.
