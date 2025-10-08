@@ -7,9 +7,14 @@
 
 # Default config (override via env vars in ~/.zshrc)
 : ${NTFY_THRESHOLD:=30}
-: ${NTFY_TOPIC:="mytopic"}
 : ${NTFY_TITLE:="Terminal"}
 : ${NTFY_IGNORED_COMMANDS:=("nvim" "vim" "lazydocker" "lazyvim")}
+
+# Require NTFY_TOPIC to be set (no default for security)
+if [[ -z "$NTFY_TOPIC" ]]; then
+    echo "Error: NTFY_TOPIC environment variable must be set for zsh-auto-ntfy to work. Please add 'export NTFY_TOPIC=\"your-topic\"' to your ~/.zshrc."
+    return 1
+fi
 
 # Debug mode (set export NTFY_DEBUG=1 in ~/.zshrc to enable echoes)
 : ${NTFY_DEBUG:=0}
